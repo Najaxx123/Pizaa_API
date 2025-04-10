@@ -19,6 +19,10 @@ body {
   font-family: var(--red-hat-ff);
 }
 
+.hidden {
+  display: none !important;
+}
+
 .main-wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -40,7 +44,28 @@ body {
 
 .add-to-cart-btn {
   align-items: center;
+  flex-direction: row-reverse;
   background-color: var(--white);
+  border-radius: 24px;
+  border: 1px solid var(--beaver);
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  gap: 8px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 24px;
+  position: relative;
+  top: -20px;
+  width: fit-content;
+  font-weight: 600;
+}
+
+.select-quantity-btn {
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: var(--tia-maria);
   border-radius: 24px;
   border: 1px solid var(--beaver);
   cursor: pointer;
@@ -309,4 +334,3 @@ body {
 .on-click-add {
   background-color: #c73b0f;
 }
-
